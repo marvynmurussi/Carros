@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Trabalho dos filmes Carros</title>
+<style>
+    /* Remove barra do Blogger */
+    #navbar-iframe {
+        display: none !important;
+    }
+
+    /* Garante que o site ocupe a tela toda */
+    html, body {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        height: 100%;
+        background-color: #000000;
+    }
+
+    body {
+        font-family: Arial, sans-serif;
+        color: #333;
+    }
+
+    .botao-voltar {
+        background-color: black;
+        color: white;
+        padding: 5px 10px;
+        border-radius: 5px;
+        border: none;
+        cursor: pointer;
+        position: absolute;
+        left: 20px;
+        top: 20px;
+        font-size: 14px;
+    }
+    .botao-voltar:hover {
+        background-color: #333;
+    }
+
+    .container {
+        width: 90%;
+        max-width: 1000px;
+        margin: 20px auto;
+        padding: 20px;
+        background-color: white;
+        border-radius: 10px;
+        box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+    }
+
+    .intro {
+        text-align: center;
+        font-size: 1.2em;
+        margin-bottom: 30px;
+    }
+
+    .tab {
+        overflow: hidden;
+        border-bottom: 2px solid #ccc;
+        margin-bottom: 20px;
+    }
+    .tab button {
+        background-color: #f4f4f4;
+        float: left;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        padding: 14px 16px;
+        transition: 0.3s;
+        font-size: 16px;
+    }
+    .tab button:hover {
+        background-color: #ddd;
+    }
+    .tab button.active {
+        background-color: #e63946;
+        color: white;
+    }
+
+    .tabcontent {
+        display: none;
+        animation: fadeEffect 0.5s;
+    }
+    @keyframes fadeEffect {
+        from {opacity: 0;}
+        to {opacity: 1;}
+    }
+
+    iframe {
+        width: 100%;
+        height: 400px;
+        border-radius: 8px;
+        border: none;
+    }
+
+    h2 {
+        color: #e63946;
+        margin-top: 20px;
+    }
+
+    .personagens {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 15px;
+        margin-top: 15px;
+        justify-content: space-around;
+    }
+
+    .personagem {
+        text-align: center;
+    }
+    .personagem img {
+        width: 120px;
+        height: 120px;
+        border-radius: 50%;
+        border: 3px solid #e63946;
+        object-fit: cover;
+    }
+    .personagem p {
+        margin-top: 5px;
+        font-weight: bold;
+    }
+
+    .botao {
+        display: inline-block;
+        padding: 10px 15px;
+        background-color: #e63946;
+        color: white;
+        border-radius: 5px;
+        text-decoration: none;
+        margin-top: 10px;
+        cursor: pointer;
+        border: none;
+    }
+    .botao:hover {
+        background-color: #d62828;
+    }
+</style>
+</head>
+<body>
+
+<header>
+    <button class="botao-voltar" onclick="history.back();">Voltar</button>
+</header>
+
+<div class="container">
+    <div class="intro">
+        <p>Bem-vindo ao nosso site sobre a saga Carros! Aqui você encontrará trailers, sinopses detalhadas, clímax e informações de todos os personagens principais de cada filme da saga. Clique nas abas para ver cada filme separadamente.</p>
+    </div>
+
+    <div class="tab">
+        <button type="button" class="tablinks">Carros 1</button>
+        <button type="button" class="tablinks">Carros 2</button>
+        <button type="button" class="tablinks">Carros 3</button>
+    </div>
+
+    <!-- Carros 1 -->
+    <div class="tabcontent">
+        <h2>Carros (2006)</h2>
+        <iframe src="https://www.youtube.com/embed/SbXIj2T-_uk"></iframe>
+        <p><strong>Sinopse:</strong> Relâmpago McQueen, um jovem e ambicioso carro de corrida, quer vencer a Copa Pistão. No caminho, ele se perde em Radiator Springs, onde conhece Mate, Sally, Doc Hudson e outros personagens que o ensinam sobre amizade, humildade e caráter. Ele aprende que a vitória verdadeira não está só nas pistas, mas também nas relações que constrói.</p>
+        <p><strong>Clímax:</strong> Na corrida final, McQueen permite que o veterano "O Rei" termine sua última corrida com dignidade, mostrando maturidade e ética.</p>
+        <a href="https://www.disneyplus.com/pt-br/movies/cars/9c1b0ec2-2e4e-4717-89fb-bdf3a45523df" target="_blank" class="botao">Assistir filme completo</a>
+        <div class="personagens">
+            <div class="personagem"><img src="https://s3.amazonaws.com/blog.dentrodahistoria.com.br/wp-content/uploads/2022/09/14102229/relampago-mcqueen.png" alt="McQueen"><p>McQueen</p></div>
+            <div class="personagem"><img src="https://s3.amazonaws.com/blog.dentrodahistoria.com.br/wp-content/uploads/2022/09/14102436/Mate.png" alt="Mate"><p>Mate</p></div>
+            <div class="personagem"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZsOvbohZDz1M0CXvtxBCZz_bcBFWftoNHng&s" alt="Sally"><p>Sally</p></div>
+            <div class="personagem"><img src="https://s3.amazonaws.com/blog.dentrodahistoria.com.br/wp-content/uploads/2022/09/14103548/doc-hudson.png" alt="Doc Hudson"><p>Doc Hudson</p></div>
+            <div class="personagem"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQtft-AlGPrMZfeHFfe5jv5MRUzBluCfLbXeA&s" alt="Chick Hicks"><p>Chick Hicks</p></div>
+            <div class="personagem"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSoVXJ33at_fCDNPNnIDX7nbPQYSfrE2QpNlw&s" alt="O Rei"><p>O Rei</p></div>
+            <div class="personagem"><img src="https://s3.amazonaws.com/blog.dentrodahistoria.com.br/wp-content/uploads/2022/09/14102915/Mack.png" alt="Mack"><p>Mack</p></div>
+        </div>
+    </div>
+
+    <!-- Carros 2 -->
+    <div class="tabcontent">
+        <h2>Carros 2 (2011)</h2>
+        <iframe src="https://www.youtube.com/embed/oFTfAdauCOo"></iframe>
+        <p><strong>Sinopse:</strong> McQueen viaja para competir no Grand Prix Mundial, enquanto Mate acidentalmente se envolve em uma missão de espionagem internacional. O filme mistura corrida com ação, espionagem e revela conspirações envolvendo combustíveis alternativos. McQueen aprende a lidar com a pressão da competição global e a importância da amizade.</p>
+        <p><strong>Clímax:</strong> Mate consegue desmascarar os vilões, salvar McQueen de um perigo iminente e ajudar na conclusão da corrida, mostrando coragem e lealdade.</p>
+        <a href="https://www.disneyplus.com/pt-br/movies/cars-2/24d0c1f2-3f42-4c16-8e2d-0bb0d47742d6" target="_blank" class="botao">Assistir filme completo</a>
+        <div class="personagens">
+            <div class="personagem"><img src="https://s3.amazonaws.com/blog.dentrodahistoria.com.br/wp-content/uploads/2022/09/14102436/Mate.png" alt="Mate"><p>Mate</p></div>
+            <div class="personagem"><img src="https://vejasp.abril.com.br/wp-content/uploads/2016/12/francesco-blog.jpg" alt="Francesco Bernoulli"><p>Francesco Bernoulli</p></div>
+            <div class="personagem"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTpWbDidxyB_U8K-iP2p526EcuqTNSh05z0Ww&s" alt="Grem"><p>Grem</p></div>
+            <div class="personagem"><img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhaQsCd56dH-Dswghmn4kHdrnNNLwF8BFICXgK8t6dZET3_PLM7vBQy82JuDxDuNbWHtdm9T6LA9ogjpeePjpuxnht7Dw_q__TFKln0MPeXCyYlPPTKPXiHrQLttI-nZuWQIVxyb7l7cA/s1600/Personagens+Carros+2+-+Holley+Shiftwell.jpg" alt="Holley Shiftwell"><p>Holley Shiftwell</p></div>
+            <div class="personagem"><img src="https://i0.wp.com/28.media.tumblr.com/tumblr_lf893winZ41qd6icvo1_500.jpg" alt="Finn McMissile"><p>Finn McMissile</p></div>
+        </div>
+    </div>
+
+    <!-- Carros 3 -->
+    <div class="tabcontent">
+        <h2>Carros 3 (2017)</h2>
+        <iframe src="https://www.youtube.com/embed/2LeOH9AGJQM"></iframe>
+        <p><strong>Sinopse:</strong> McQueen enfrenta a nova geração de corredores liderada por Jackson Storm e sofre um acidente que quase encerra sua carreira. Com a ajuda da treinadora Cruz Ramirez, ele aprende a reinventar sua técnica e valores, mostrando que experiência, amizade e determinação são essenciais para superar obstáculos.</p>
+        <p><strong>Clímax:</strong> Na última corrida, McQueen permite que Cruz corra no seu lugar e vença, provando que o legado é mais importante do que a glória pessoal.</p>
+        <a href="https://www.disneyplus.com/pt-br/movies/cars-3/4c5a6f1b-9f53-4e2b-9b77-32c9170f0f06" target="_blank" class="botao">Assistir filme completo</a>
+        <div class="personagens">
+            <div class="personagem"><img src="https://blogs.opovo.com.br/cinemaas8/wp-content/uploads/sites/57/2017/07/carros_3_cinema_às_8_2-624x351.jpg" alt="Jackson Storm"><p>Jackson Storm</p></div>
+            <div class="personagem"><img src="https://telinha.com.br/wp-content/uploads/2025/01/cruz-ramirez-carros3-1024x551.jpg" alt="Cruz Ramirez"><p>Cruz Ramirez</p></div>
+            <div class="personagem"><img src="https://s3.amazonaws.com/blog.dentrodahistoria.com.br/wp-content/uploads/2022/09/14102229/relampago-mcqueen.png" alt="McQueen"><p>McQueen</p></div>
+        </div>
+    </div>
+
+</div>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    const tablinks = document.querySelectorAll('.tablinks');
+    const tabcontents = document.querySelectorAll('.tabcontent');
+
+    function showTab(index) {
+        tabcontents.forEach((c, i) => c.style.display = (i === index ? 'block' : 'none'));
+        tablinks.forEach((b, i) => b.classList.toggle('active', i === index));
+    }
+
+    tablinks.forEach((btn, i) => {
+        btn.addEventListener('click', function() {
+            showTab(i);
+        });
+    });
+
+    showTab(0);
+});
+</script>
+
+</body>
+</html>
